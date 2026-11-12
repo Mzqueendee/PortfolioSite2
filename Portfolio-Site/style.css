@@ -1,0 +1,114 @@
+/* TYPE SELECTOR */
+
+body {
+    margin: 0;
+    background-color: #FFFFFF;
+    color: #1E3A8A;
+    font-family: Verdana, sans-serif;
+    line-height: 1.6;
+}
+
+/* ID SELECTOR */
+
+#header {
+    background-color: #1E3A8A;
+    color: #FFFFFF;
+    text-align: center;
+    padding: 24px;
+}
+
+/* TYPE SELECTOR */
+
+h1,
+h2 {
+    font-family: Arial, sans-serif;
+}
+
+/* CLASS SELECTORS */
+
+.navigation {
+    margin-top: 16px;
+}
+
+.navigation a {
+    color: #FFFFFF;
+    text-decoration: none;
+    font-weight: bold;
+    margin: 0 12px;
+}
+
+.navigation a:hover {
+    color: #93C5FD;
+}
+
+.welcome {
+    padding: 32px;
+    text-align: center;
+}
+
+.featured {
+    display: flex;
+    justify-content: center;
+    padding: 32px;
+}
+
+.projects-grid {
+    display: flex;
+    justify-content: center;
+    gap: 24px;
+    padding: 32px;
+    flex-wrap: wrap;
+}
+
+.card {
+    background-color: #93C5FD;
+    color: #1E3A8A;
+    width: 300px;
+    padding: 24px;
+    margin: 16px auto;
+    border-radius: 8px;
+}
+
+footer {
+    background-color: #1E3A8A;
+    color: #FFFFFF;
+    text-align: center;
+    padding: 16px;
+    margin-top: 24px;
+}
+
+/* TABLET */
+
+@media (max-width: 768px) {
+
+    .projects-grid {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .card {
+        width: 85%;
+    }
+
+}
+
+/* MOBILE */
+
+@media (max-width: 320px) {
+
+    .navigation a {
+        display: block;
+        margin: 8px 0;
+    }
+
+    .welcome,
+    .featured,
+    .projects-grid {
+        padding: 16px;
+    }
+
+    .card {
+        width: 100%;
+    }
+
+}
